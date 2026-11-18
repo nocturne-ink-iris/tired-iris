@@ -150,7 +150,7 @@
                 },
                 {
                     "identifier": "nsfw",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "worldInfoAfter",
@@ -166,7 +166,7 @@
                 },
                 {
                     "identifier": "jailbreak",
-                    "enabled": true
+                    "enabled": false
                 }
             ]
         },
@@ -219,7 +219,7 @@
                 },
                 {
                     "identifier": "jailbreak",
-                    "enabled": true
+                    "enabled": false
                 }
             ]
         }
@@ -234,7 +234,7 @@
     "continue_postfix": " ",
     "function_calling": false,
     "tool_call_recurse_limit": 5,
-    "show_thoughts": false,
+    "show_thoughts": true,
     "auto_append_reasoning_tags": false,
     "auto_append_reasoning_tag_style": "think",
     "reasoning_effort": "none",
