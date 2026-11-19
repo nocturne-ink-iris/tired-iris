@@ -1,0 +1,18 @@
+{
+    "id": "67dd4518-d1d2-41a5-b61e-5d181c716020",
+    "scriptName": "Return Normal Spaces",
+    "findRegex": "/ /g",
+    "replaceString": " ",
+    "trimStrings": [],
+    "placement": [
+        1,
+        2
+    ],
+    "disabled": false,
+    "markdownOnly": true,
+    "promptOnly": true,
+    "runOnEdit": true,
+    "substituteRegex": 2,
+    "minDepth": null,
+    "maxDepth": null
+}

@@ -1,0 +1,18 @@
+{
+    "id": "a86bbd4b-afc9-4a0e-ad37-2686f170689f",
+    "scriptName": "Use Figure Spaces",
+    "findRegex": "/ /g",
+    "replaceString": " ",
+    "trimStrings": [],
+    "placement": [
+        1,
+        2
+    ],
+    "disabled": true,
+    "markdownOnly": false,
+    "promptOnly": true,
+    "runOnEdit": true,
+    "substituteRegex": 0,
+    "minDepth": null,
+    "maxDepth": null
+}
