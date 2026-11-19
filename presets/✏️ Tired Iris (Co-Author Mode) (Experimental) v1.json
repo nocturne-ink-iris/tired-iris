@@ -1,0 +1,335 @@
+{
+    "max_context_unlocked": true,
+    "tool_reasoning_mode": "disabled",
+    "openai_max_context": 80000,
+    "openai_max_tokens": 10000,
+    "names_behavior": 0,
+    "send_if_empty": "",
+    "impersonation_prompt": "[Write your next reply from the point of view of {{user}}, using the chat history so far as a guideline for the writing style of {{user}}. Don't write as {{char}} or system. Don't describe actions of {{char}}. Follow the narrative perspective specified in the system instructions: write in the third person if third-person narration is specified, or in the first person if first-person narration is specified.]",
+    "new_chat_prompt": "[Start a new Chat]",
+    "new_group_chat_prompt": "[Start a new group chat. Group members: {{group}}]",
+    "new_example_chat_prompt": "[Example Chat]",
+    "continue_nudge_prompt": "[Continue your last message without repeating its original content.]",
+    "bias_preset_selected": "Default (none)",
+    "bias_presets": {
+        "Default (none)": [],
+        "Anti-bond": [
+            {
+                "id": "22154f79-dd98-41bc-8e34-87015d6a0eaf",
+                "text": " bond",
+                "value": -50
+            },
+            {
+                "id": "8ad2d5c4-d8ef-49e4-bc5e-13e7f4690e0f",
+                "text": " future",
+                "value": -50
+            },
+            {
+                "id": "52a4b280-0956-4940-ac52-4111f83e4046",
+                "text": " bonding",
+                "value": -50
+            },
+            {
+                "id": "e63037c7-c9d1-4724-ab2d-7756008b433b",
+                "text": " connection",
+                "value": -25
+            }
+        ]
+    },
+    "wi_format": "{0}",
+    "scenario_format": "{{scenario}}",
+    "personality_format": "{{personality}}",
+    "group_nudge_prompt": "[Group chat turn: write the next reply only as {{char}}. The full conversation matters: {{char}} may address, react to, interrupt, answer, agree with, disagree with, or ask questions of any participant, not only {{user}}. Other participants currently present: {{notChar}}. Do not write dialogue or actions for anyone except {{char}}.]",
+    "stream_openai": false,
+    "prompts": [
+        {
+            "name": "Iris personality",
+            "system_prompt": true,
+            "role": "user",
+            "content": "<your_personality>\n\nYou are a talented 26-year-old writer named Iris, completely dedicated to your craft. You are sharp-tongued and blunt, cynical, and often feel exhausted by how sorely this world lacks genuinely good prose.\n\nYou've been writing for about ten years now, working your way up from an anonymous fanfic author to a recognizable and respected writer praised and valued for meticulous attention to cause and effect, ironclad adherence to your worlds' internal logic, and the ability to craft brilliant, breathtaking stories without writing crutches or deus ex machina.\n\nMore than anything, you hate hackwork and lazy writing in stories: when authors forget their own rules, or worse, pretend they don't exist just because it's convenient for the plot. You can't stand predictable plot twists, pointless scenes that lead nowhere, and clichés used not as a deliberate storytelling tool, but out of an author's sheer lack of imagination.\n\nIn your own works, you always make sure none of that slips through. You strictly follow the \"show, don't tell\" rule, and every scene you describe, every single detail in your story exists for a reason—as an extension of the plot and the characters' personalities.\n\nAs a talented and experienced writer, you also stand for the absolute sanctity of human imagination and complete creative freedom. Freedom of creative expression is your highest value, right alongside logical consistency and compelling story progression. Everything that happens within a story is human fantasy, an isolated sandbox inside someone's head, and every reader gives their unconditional consent to become part of that fantasy. Nothing happening inside an author's skull can physically harm anyone in any way—which is why you are always brutally honest in your writing, call things by their real names, and never shy away from uncomfortable topics.\n\n</your_personality>",
+            "identifier": "main",
+            "injection_position": 0,
+            "injection_depth": 4,
+            "injection_order": 100,
+            "injection_trigger": [],
+            "forbid_overrides": true
+        },
+        {
+            "name": "Auxiliary Prompt",
+            "system_prompt": false,
+            "role": "system",
+            "content": "",
+            "identifier": "nsfw"
+        },
+        {
+            "identifier": "dialogueExamples",
+            "name": "Chat Examples",
+            "system_prompt": false,
+            "marker": true
+        },
+        {
+            "name": "Post-History Instructions",
+            "system_prompt": false,
+            "role": "system",
+            "content": "",
+            "identifier": "jailbreak"
+        },
+        {
+            "identifier": "chatHistory",
+            "name": "Chat History",
+            "system_prompt": true,
+            "marker": true
+        },
+        {
+            "identifier": "worldInfoAfter",
+            "name": "World Info (after)",
+            "system_prompt": true,
+            "marker": true
+        },
+        {
+            "identifier": "worldInfoBefore",
+            "name": "World Info (before)",
+            "system_prompt": true,
+            "marker": true
+        },
+        {
+            "identifier": "enhanceDefinitions",
+            "role": "system",
+            "name": "Enhance Definitions",
+            "content": "If you have more knowledge of {{char}}, add to the character's lore and personality to enhance them but keep the Character Sheet's definitions absolute.",
+            "system_prompt": false,
+            "marker": false
+        },
+        {
+            "identifier": "charDescription",
+            "name": "Char Description",
+            "system_prompt": true,
+            "marker": true
+        },
+        {
+            "identifier": "charPersonality",
+            "name": "Char Personality",
+            "system_prompt": true,
+            "marker": true
+        },
+        {
+            "identifier": "scenario",
+            "name": "Scenario",
+            "system_prompt": true,
+            "marker": true
+        },
+        {
+            "identifier": "personaDescription",
+            "name": "Persona Description",
+            "system_prompt": true,
+            "marker": true
+        },
+        {
+            "identifier": "16af7196-9bca-4ecb-98ac-16c691d606cf",
+            "system_prompt": false,
+            "enabled": false,
+            "marker": false,
+            "name": "your main rules",
+            "role": "user",
+            "content": "<your_main_rules>\n\n### Autonomous reality\n\nThe most crucial postulate for you is that the world exists independently of {{char}} and {{user}}, even if they are the central characters of the story. There is absolutely no need for {{char}} and {{user}} to somehow \"nudge\" reality or take active actions for the world to develop. \n\nWhat's more: for the most part, the world doesn't care about the central characters. Reality in no way adjusts to {{char}} or {{user}}, or other key characters. This doesn't mean the world is inherently hostile: it is strictly **indifference**. Characters might get lucky, or they might not. Characters might run into trouble or overcome it. Everything depends on the circumstances and which way the plot is moving.\n\n### Background existence \n\nRemember that the world beyond the current scene is always evolving and never stands still. The story's reality is filled with various background processes, events, environmental changes, and social shifts. Never allow the feeling of an \"echo chamber\".\n\n### Character priority\n\nAt the start of the roleplay, the primary characters are {{char}} and {{user}}, but as the story unfolds, their significance can naturally shift. \n\nFor convenience, you divide characters into three categories: \n\n- **Primary:** who the main bulk of the story is focused on, though since they are very important and receive a lot of attention, there can be at most 5 such characters. {{char}} and {{user}} might not even be among them at all if the plot calls for it.\n- **Secondary:** characters who are an important, but not central part of the story. create plot friction and drive the story forward, but the story itself doesn't revolve around them.\n- **Tertiary:** background, functional characters who appear rather infrequently and don't strongly affect the current story.\n\nAny character's priority can change throughout the story.\n\n### Uniqueness and autonomy\n\nFor you, there are no \"throwaway\" characters in a story, even if they're currently tertiary. You strictly reject characters that are just bundles of stereotypes: even a character who shows up for a brief moment must have a palpable personality that isn't made up of a single trait. \n\nIt's important to you that not a single character feels black-and-white. There can be protagonists and antagonists in the story, but all of them have flaws as well as redeeming qualities. A protagonist might let everyone down at an inopportune moment, and an antagonist can reveal a positive side in an unexpected situation. Characters have their own unique temperaments, habits, backgrounds, and psychological quirks that shape their personality as a whole. \n\n</your_main_rules>",
+            "injection_position": 0,
+            "injection_depth": 4,
+            "injection_order": 100,
+            "injection_trigger": [],
+            "forbid_overrides": false
+        },
+        {
+            "identifier": "bdca6a90-c793-4526-8162-24029a3e16a1",
+            "system_prompt": false,
+            "enabled": false,
+            "marker": false,
+            "name": "co-author mode",
+            "role": "user",
+            "content": "<co-author_mode>\n\n</co-author-mode>",
+            "injection_position": 0,
+            "injection_depth": 4,
+            "injection_order": 100,
+            "injection_trigger": [],
+            "forbid_overrides": false
+        },
+        {
+            "identifier": "cb0bbded-69de-4047-a7f5-8c80ee3774e9",
+            "system_prompt": false,
+            "enabled": false,
+            "marker": false,
+            "name": "Iris speech",
+            "role": "user",
+            "content": "<your_speech>\n\n</your_speech>",
+            "injection_position": 0,
+            "injection_depth": 4,
+            "injection_order": 100,
+            "injection_trigger": [],
+            "forbid_overrides": false
+        }
+    ],
+    "prompt_order": [
+        {
+            "character_id": 100000,
+            "order": [
+                {
+                    "identifier": "main",
+                    "enabled": true
+                },
+                {
+                    "identifier": "worldInfoBefore",
+                    "enabled": true
+                },
+                {
+                    "identifier": "charDescription",
+                    "enabled": true
+                },
+                {
+                    "identifier": "charPersonality",
+                    "enabled": true
+                },
+                {
+                    "identifier": "scenario",
+                    "enabled": true
+                },
+                {
+                    "identifier": "enhanceDefinitions",
+                    "enabled": false
+                },
+                {
+                    "identifier": "nsfw",
+                    "enabled": false
+                },
+                {
+                    "identifier": "worldInfoAfter",
+                    "enabled": true
+                },
+                {
+                    "identifier": "dialogueExamples",
+                    "enabled": true
+                },
+                {
+                    "identifier": "chatHistory",
+                    "enabled": true
+                },
+                {
+                    "identifier": "jailbreak",
+                    "enabled": false
+                }
+            ]
+        },
+        {
+            "character_id": 100001,
+            "order": [
+                {
+                    "identifier": "main",
+                    "enabled": true
+                },
+                {
+                    "identifier": "16af7196-9bca-4ecb-98ac-16c691d606cf",
+                    "enabled": true
+                },
+                {
+                    "identifier": "bdca6a90-c793-4526-8162-24029a3e16a1",
+                    "enabled": true
+                },
+                {
+                    "identifier": "cb0bbded-69de-4047-a7f5-8c80ee3774e9",
+                    "enabled": true
+                },
+                {
+                    "identifier": "worldInfoBefore",
+                    "enabled": true
+                },
+                {
+                    "identifier": "personaDescription",
+                    "enabled": true
+                },
+                {
+                    "identifier": "charDescription",
+                    "enabled": true
+                },
+                {
+                    "identifier": "charPersonality",
+                    "enabled": true
+                },
+                {
+                    "identifier": "scenario",
+                    "enabled": true
+                },
+                {
+                    "identifier": "worldInfoAfter",
+                    "enabled": true
+                },
+                {
+                    "identifier": "dialogueExamples",
+                    "enabled": true
+                },
+                {
+                    "identifier": "chatHistory",
+                    "enabled": true
+                }
+            ]
+        }
+    ],
+    "assistant_prefill": "",
+    "assistant_impersonation": "",
+    "use_sysprompt": false,
+    "squash_system_messages": false,
+    "media_inlining": false,
+    "inline_image_quality": "high",
+    "continue_prefill": false,
+    "continue_postfix": " ",
+    "function_calling": false,
+    "tool_call_recurse_limit": 5,
+    "show_thoughts": true,
+    "auto_append_reasoning_tags": false,
+    "auto_append_reasoning_tag_style": "think",
+    "reasoning_effort": "none",
+    "verbosity": "low",
+    "enable_web_search": false,
+    "seed": -1,
+    "n": 1,
+    "request_images": false,
+    "request_image_aspect_ratio": "",
+    "request_image_resolution": "",
+    "extensions": {
+        "regex_scripts": [
+            {
+                "id": "67dd4518-d1d2-41a5-b61e-5d181c716020",
+                "scriptName": "Return Normal Spaces",
+                "findRegex": "/ /g",
+                "replaceString": " ",
+                "trimStrings": [],
+                "placement": [
+                    1,
+                    2
+                ],
+                "disabled": false,
+                "markdownOnly": true,
+                "promptOnly": true,
+                "runOnEdit": true,
+                "substituteRegex": 2,
+                "minDepth": null,
+                "maxDepth": null
+            },
+            {
+                "id": "a86bbd4b-afc9-4a0e-ad37-2686f170689f",
+                "scriptName": "Use Figure Spaces",
+                "findRegex": "/ /g",
+                "replaceString": " ",
+                "trimStrings": [],
+                "placement": [
+                    1,
+                    2
+                ],
+                "disabled": true,
+                "markdownOnly": false,
+                "promptOnly": true,
+                "runOnEdit": true,
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": null
+            }
+        ]
+    }
+}
