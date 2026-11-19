@@ -131,7 +131,7 @@
             "marker": false,
             "name": "readme",
             "role": "system",
-            "content": "",
+            "content": "links:\n\ngithub with readme: \ntelegram: https://t.me/zalupakomaeda\n\nthaks for using my preset, it means a lot for me.",
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
