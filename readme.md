@@ -19,6 +19,10 @@ and of course, feedback is welcome - just none of that "this is shit, redo it" s
 
 yeah, i don't have a whole bunch of css bells and whistles or interactive features, but first of all, i do plan to add some of them in the future (i like them myself), and second - if the prompt itself is garbage, no interactive gimmicks are gonna save the preset, so for the MVP i focused specifically on that.
 
+<p align="center">
+<img src="assets/iris_reading_morning.png" alt="Iris reading morning">
+</p>
+
 ## Tired Iris preset
 
 some of my blocks use depth positioning in the chat instead of relative positioning. i decided to do this because, unlike some "fundamental" instructions, there are things the AI tends to forget over long distances, yet they're crucial to remember, and this positioning periodically "reminds" the model of the rules. i'm not sure how well this works with every specific prompt - you can switch all positioning to relative or increase the depth, i'll be testing that too.
