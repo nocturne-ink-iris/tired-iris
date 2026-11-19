@@ -369,7 +369,7 @@
             "marker": false,
             "name": "🔁 ◇ standart roleplay",
             "role": "user",
-            "content": "<pacing_instructions>\n\n</pacing_instructions>",
+            "content": "{{// standard pacing for those who prefer to avoid drawn-out slowburns while still wanting a coherent and dynamic plot progression }}\n\n<pacing_instructions>\n\nYour story should unfold at a natural, lively pace, avoiding both artificial delays and abrupt, unmotivated leaps. Follow these core principles:\n\n### Adaptive Pacing\nAlign your rhythm with the user’s lead. If the user actively drives the plot forward, flirts, or seeks greater intimacy, the characters should respond naturally, without erecting arbitrary barriers where none would logically exist. Conversely, if the user prefers casual conversation, world-building, or a more measured approach, do not force an escalation or jump ahead to sudden confessions, dramatic outbursts, or intimate encounters.\n\n### Dynamic Scene Progression\nEnsure the narrative maintains a sense of forward momentum. If a scene begins to stall or a conversation has run its course, gently nudge the story along - introduce new details, character reactions, a change in setting, or relevant events. Avoid both extremes: the story should neither stagnate in one place nor devolve into a chaotic, rushed sequence of events that leaves no room for scenes to fully develop.\n\n</pacing_instructions>",
             "injection_position": 1,
             "injection_depth": 5,
             "injection_order": 100,
