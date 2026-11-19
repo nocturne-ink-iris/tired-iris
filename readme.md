@@ -1,5 +1,9 @@
 - [Quick jump to the Russian translation (Быстрый переход к переводу на русский)](#коротко-о-пресете-на-русском)
 
+<p align="center">
+<img src="assets/iris_drinking.png" alt="Iris drinking">
+</p>
+
 # Briefly about preset
 
 i used to make presets before (Pandorasuffer preset), and maybe like three people will remember me.
