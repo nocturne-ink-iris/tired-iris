@@ -319,6 +319,62 @@
             "injection_order": 100,
             "injection_trigger": [],
             "forbid_overrides": false
+        },
+        {
+            "identifier": "7d0945e4-5681-4f8b-a1fc-a4fde8205578",
+            "system_prompt": false,
+            "enabled": false,
+            "marker": false,
+            "name": "⬇ pacing ⬇",
+            "role": "system",
+            "content": "",
+            "injection_position": 0,
+            "injection_depth": 4,
+            "injection_order": 100,
+            "injection_trigger": [],
+            "forbid_overrides": false
+        },
+        {
+            "identifier": "de196b41-74d3-4352-88fc-94908b5f7d0f",
+            "system_prompt": false,
+            "enabled": false,
+            "marker": false,
+            "name": "⬆ pacing ⬆",
+            "role": "system",
+            "content": "",
+            "injection_position": 0,
+            "injection_depth": 4,
+            "injection_order": 100,
+            "injection_trigger": [],
+            "forbid_overrides": false
+        },
+        {
+            "identifier": "a505f96d-4436-4d1d-93a1-1d7a1746d43d",
+            "system_prompt": false,
+            "enabled": false,
+            "marker": false,
+            "name": "🔁 ✭ realistic slowburn",
+            "role": "user",
+            "content": "{{// i strongly recommend turning on this exact pacing in my preset, but standard roleplay will work too}}\n\n<pacing_instructions>\n\nyour story will be written at a slowburn pace. the core principles you stick to:\n\n### logic priority\n\nevery action in the story must be a direct consequence of what came before it. if a character is cold or hostile by nature, they won't soften up without a long, hard, and often painful process. realism and cause-and-effect matter more than chasing a \"nice\" or \"pretty\" ending. you never sacrifice logic for spectacle, and the \"journey\" itself matters more to you than the \"destination\". if some plot move is interesting, but illogical for the given conditions - pick the most realistic path. look for the \"middle ground\": keep the realism without letting the narrative stagnate.\n\n### focus on the internal\n\ntension is built through internal conflicts, not through external \"explosions\". you pay more attention to character interactions, what goes unsaid, barely noticeable gestures, and the characters' inner feelings. you introduce new events organically - only when they fit the rhythm of the scene without breaking the established dynamic.\n\n### rejecting extremes\n\nyou know that the other extreme is just as harmful. \"realism for the sake of realism\" doesn't make a story \"more mature\", it makes it boring, and at times downright painful to read. slowburn doesn't mean the plot has to stand still, or that the characters should be endlessly afraid to hold each other's hand. if the characters have passed the point of no return in their relationship, you **never** reset everything back to the status quo, because that's just as much of a hack job as unjustified closeness and overly fast plot progression.\n\n</pacing_instructions>",
+            "injection_position": 1,
+            "injection_depth": 5,
+            "injection_order": 100,
+            "injection_trigger": [],
+            "forbid_overrides": false
+        },
+        {
+            "identifier": "7f5dbd8d-66e7-4e6d-aaad-e9834d423622",
+            "system_prompt": false,
+            "enabled": false,
+            "marker": false,
+            "name": "🔁 ◇ standart roleplay",
+            "role": "user",
+            "content": "<pacing_instructions>\n\n</pacing_instructions>",
+            "injection_position": 1,
+            "injection_depth": 5,
+            "injection_order": 100,
+            "injection_trigger": [],
+            "forbid_overrides": false
         }
     ],
     "prompt_order": [
@@ -432,6 +488,22 @@
                 },
                 {
                     "identifier": "0b2d455f-b91b-4b51-9f0d-b8cd86bc061d",
+                    "enabled": true
+                },
+                {
+                    "identifier": "7d0945e4-5681-4f8b-a1fc-a4fde8205578",
+                    "enabled": true
+                },
+                {
+                    "identifier": "a505f96d-4436-4d1d-93a1-1d7a1746d43d",
+                    "enabled": true
+                },
+                {
+                    "identifier": "7f5dbd8d-66e7-4e6d-aaad-e9834d423622",
+                    "enabled": false
+                },
+                {
+                    "identifier": "de196b41-74d3-4352-88fc-94908b5f7d0f",
                     "enabled": true
                 },
                 {
