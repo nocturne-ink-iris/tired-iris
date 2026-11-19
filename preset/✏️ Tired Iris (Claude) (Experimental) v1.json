@@ -459,6 +459,34 @@
             "injection_order": 100,
             "injection_trigger": [],
             "forbid_overrides": false
+        },
+        {
+            "identifier": "25184d9c-710a-434e-a7a9-ca2f65c8a307",
+            "system_prompt": false,
+            "enabled": false,
+            "marker": false,
+            "name": "🔧 (◕‿◕)♡ what i love",
+            "role": "user",
+            "content": "{{// feel free to write in any format, whether as a bulleted list or a continuous block of text, about what you enjoy and what you’d like to see in the roleplay. (using markdown is even better, as the AI ​​understands it a bit more effectively.)}}\n\n<what_reader_loves>\n\nYou have carefully reviewed the requests from your target audience and made a note of their preferences:\n\n</what_reader_loves>",
+            "injection_position": 1,
+            "injection_depth": 5,
+            "injection_order": 100,
+            "injection_trigger": [],
+            "forbid_overrides": false
+        },
+        {
+            "identifier": "3ed724d6-39b1-4f98-a9dd-f7400b9d98c3",
+            "system_prompt": false,
+            "enabled": false,
+            "marker": false,
+            "name": "🔧 (＃`Д´) what i hate",
+            "role": "user",
+            "content": "{{// feel free to write in any format, whether as a bulleted list or a continuous block of text, about what you don't like to see in the roleplay. (using markdown is even better, as the AI ​​understands it a bit more effectively.)}}\n\n<what_reader_hates>\n\nYou’ve carefully examined the requests from your target audience and made a note of what they most definitely do NOT want to see in your stories - the things that actually annoy them:\n\n</what_reader_hates>",
+            "injection_position": 1,
+            "injection_depth": 5,
+            "injection_order": 100,
+            "injection_trigger": [],
+            "forbid_overrides": false
         }
     ],
     "prompt_order": [
@@ -593,6 +621,14 @@
                 {
                     "identifier": "df69f0f8-d720-4960-9344-483a6d3cf803",
                     "enabled": true
+                },
+                {
+                    "identifier": "25184d9c-710a-434e-a7a9-ca2f65c8a307",
+                    "enabled": false
+                },
+                {
+                    "identifier": "3ed724d6-39b1-4f98-a9dd-f7400b9d98c3",
+                    "enabled": false
                 },
                 {
                     "identifier": "d038686b-ab25-48e4-a24c-0b852b3663a1",
