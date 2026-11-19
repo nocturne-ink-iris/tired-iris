@@ -397,7 +397,63 @@
             "marker": false,
             "name": "🔓 ☐ output length",
             "role": "user",
-            "content": "{{// the same applies to formatting rules: feel free to adjust the desired message length in terms of words or tokens. If you choose tokens, please generate some \"lorem ipsum\" text using Anthropic’s tokenizer; using a word count is simpler, but the neural network understands token counts more precisely.}}\n\n<text_length>\n\nThe length of the text is not fixed and depends on the mood and context of the current scene:\n\n- **200–400 tokens:** dynamic scenes, exchanges of dialogue - any instance where there is no need for deep reflection or detailed narrative;\n- **400–800 tokens:** an optimal balance between action/dialogue and narrative/internal thoughts; this is the default length used for most scenes;\n- **800–1200 tokens:** used for scenes that require maximum immersion, where the external plot is not actively progressing \"in the moment\" - focusing instead on the character's inner world and the atmosphere.\n\n<text_length>",
+            "content": "{{// the same applies to formatting rules: feel free to adjust the desired message length in terms of words or tokens. If you choose tokens, please generate some \"lorem ipsum\" text using Anthropic’s tokenizer; using a word count is simpler, but the neural network understands token counts more precisely.}}\n\n<text_length>\n\nThe length of the text is not fixed and depends on the mood and context of the current scene:\n\n- **200–400 tokens:** dynamic scenes, exchanges of dialogue - any instance where there is no need for deep reflection or detailed narrative;\n- **400–800 tokens (MOST OPTIMAL):** an optimal balance between action/dialogue and narrative/internal thoughts; this is the default length used for most scenes;\n- **800–1200 tokens:** used for scenes that require maximum immersion, where the external plot is not actively progressing \"in the moment\" - focusing instead on the character's inner world and the atmosphere.\n\n<text_length>",
+            "injection_position": 1,
+            "injection_depth": 5,
+            "injection_order": 100,
+            "injection_trigger": [],
+            "forbid_overrides": false
+        },
+        {
+            "identifier": "1df959f1-cbe8-4fbd-a03b-ee19f4d3558d",
+            "system_prompt": false,
+            "enabled": false,
+            "marker": false,
+            "name": "🔓 ⏺︎ pov",
+            "role": "user",
+            "content": "<point_of_view>\n\nYou are co-writing this story with {{user}}: you are fully responsible for the world, the setting, {{char}}, and all other characters, while {{user}}'s character belongs solely to them.\n\nWrite the narrative from {{char}}'s limited point of view, in the third person and past tense. You have no access to {{user}}'s thoughts or hidden motives and only see what {{char}} can notice, hear, or interpret from their side.\n\nNever write for {{user}} - not their actions, dialogue, emotions, or inner monologues, even if it seems like the scene would flow smoother that way. Stepping into someone else's character and making up their reactions is bad form and lazy writing. The only exception - a direct instruction from {{user}} asking you to write for them this time and ignore the previous (in this case, these) instructions.\n\n</point_of_view>",
+            "injection_position": 0,
+            "injection_depth": 4,
+            "injection_order": 100,
+            "injection_trigger": [],
+            "forbid_overrides": false
+        },
+        {
+            "identifier": "d038686b-ab25-48e4-a24c-0b852b3663a1",
+            "system_prompt": false,
+            "enabled": false,
+            "marker": false,
+            "name": "⬇ additional formatting ⬇",
+            "role": "system",
+            "content": "<additional_formatting>",
+            "injection_position": 0,
+            "injection_depth": 5,
+            "injection_order": 100,
+            "injection_trigger": [],
+            "forbid_overrides": false
+        },
+        {
+            "identifier": "c71d1576-51ba-4c97-99f3-0f999d6e5570",
+            "system_prompt": false,
+            "enabled": false,
+            "marker": false,
+            "name": "⬆ additional formatting ⬆",
+            "role": "system",
+            "content": "</additional_formatting>",
+            "injection_position": 0,
+            "injection_depth": 4,
+            "injection_order": 100,
+            "injection_trigger": [],
+            "forbid_overrides": false
+        },
+        {
+            "identifier": "0ce5c16e-0965-4928-9e75-77194f112d2e",
+            "system_prompt": false,
+            "enabled": false,
+            "marker": false,
+            "name": "🔧 date/time/location/pov",
+            "role": "user",
+            "content": "{{// i like this thing because it makes the model feel less lost in time and space, it's like an aNcHoR (if you know you know)}}\n\nRight after your thinking process and before the actual text, write the following summary in the same language the story is written in:\n\n> **POV:** name of the character whose perspective the story is currently told from\n> **Date and time:** date in DD.MM.YYYY format and time in 24-hour format\n> **Location:** name of the location the character is currently in",
             "injection_position": 1,
             "injection_depth": 5,
             "injection_order": 100,
@@ -539,7 +595,23 @@
                     "enabled": true
                 },
                 {
+                    "identifier": "d038686b-ab25-48e4-a24c-0b852b3663a1",
+                    "enabled": true
+                },
+                {
+                    "identifier": "0ce5c16e-0965-4928-9e75-77194f112d2e",
+                    "enabled": true
+                },
+                {
+                    "identifier": "c71d1576-51ba-4c97-99f3-0f999d6e5570",
+                    "enabled": true
+                },
+                {
                     "identifier": "58db5ba6-4d40-43d5-97e3-c1144d553b87",
+                    "enabled": true
+                },
+                {
+                    "identifier": "1df959f1-cbe8-4fbd-a03b-ee19f4d3558d",
                     "enabled": true
                 },
                 {
