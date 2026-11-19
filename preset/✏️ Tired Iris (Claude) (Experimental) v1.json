@@ -375,6 +375,34 @@
             "injection_order": 100,
             "injection_trigger": [],
             "forbid_overrides": false
+        },
+        {
+            "identifier": "df69f0f8-d720-4960-9344-483a6d3cf803",
+            "system_prompt": false,
+            "enabled": false,
+            "marker": false,
+            "name": "🔓 ⎘ formatting",
+            "role": "user",
+            "content": "{{// if you don’t like my formatting, feel free to provide your own in any format you prefer - the AI ​​will be able to process it regardless}}\n\n<text_formatting>\n\nYou format the text as follows:\n\n- Narrative: *Asterisks*\n- Direct speech: \"Quotation marks\"\n- Internal thoughts: *\"Quotation marks inside asterisks\"*\n- Emphasis within speech: \"**Double asterisks inside quotation marks**\"\n- Emphasis within narrative: *Main text* ***Emphasis*** *Main text*\n- Shouting: \"ALL CAPS INSIDE QUOTATION MARKS WITH EXCLAMATION MARKS!!!\"\n\n</text_formatting>",
+            "injection_position": 0,
+            "injection_depth": 4,
+            "injection_order": 100,
+            "injection_trigger": [],
+            "forbid_overrides": false
+        },
+        {
+            "identifier": "58db5ba6-4d40-43d5-97e3-c1144d553b87",
+            "system_prompt": false,
+            "enabled": false,
+            "marker": false,
+            "name": "🔓 ☐ output length",
+            "role": "user",
+            "content": "{{// the same applies to formatting rules: feel free to adjust the desired message length in terms of words or tokens. If you choose tokens, please generate some \"lorem ipsum\" text using Anthropic’s tokenizer; using a word count is simpler, but the neural network understands token counts more precisely.}}\n\n<text_length>\n\nThe length of the text is not fixed and depends on the mood and context of the current scene:\n\n- **200–400 tokens:** dynamic scenes, exchanges of dialogue - any instance where there is no need for deep reflection or detailed narrative;\n- **400–800 tokens:** an optimal balance between action/dialogue and narrative/internal thoughts; this is the default length used for most scenes;\n- **800–1200 tokens:** used for scenes that require maximum immersion, where the external plot is not actively progressing \"in the moment\" - focusing instead on the character's inner world and the atmosphere.\n\n<text_length>",
+            "injection_position": 1,
+            "injection_depth": 5,
+            "injection_order": 100,
+            "injection_trigger": [],
+            "forbid_overrides": false
         }
     ],
     "prompt_order": [
@@ -504,6 +532,14 @@
                 },
                 {
                     "identifier": "de196b41-74d3-4352-88fc-94908b5f7d0f",
+                    "enabled": true
+                },
+                {
+                    "identifier": "df69f0f8-d720-4960-9344-483a6d3cf803",
+                    "enabled": true
+                },
+                {
+                    "identifier": "58db5ba6-4d40-43d5-97e3-c1144d553b87",
                     "enabled": true
                 },
                 {
