@@ -25,7 +25,7 @@ yeah, i don't have a whole bunch of css bells and whistles or interactive featur
 
 ## Tired Iris preset
 
-some of my blocks use depth positioning in the chat instead of relative positioning. i decided to do this because, unlike some "fundamental" instructions, there are things the AI tends to forget over long distances, yet they're crucial to remember, and this positioning periodically "reminds" the model of the rules. i'm not sure how well this works with every specific prompt - you can switch all positioning to relative or increase the depth, i'll be testing that too.
+some of my blocks use depth positioning in the chat instead of relative positioning. i decided to do this because, unlike some "fundamental" instructions, there are things the AI tends to forget over long distances, yet they're crucial to remember, and this positioning periodically "reminds" the model of the rules. i'm not sure how well this works with every specific prompt - you can switch all positioning to relative or increase the depth, i'll be testing that too. i also don't have, and don't plan to add, strict, nitpicky instructions like "write like this, not like that", "do this, not that", because i specifically made the "what i love" and "what i hate" prompts for that. the preset has a specific core, whereas everyone's preferences are different. yeah, there are certain, let's say, "claudisms" that annoy most people, and maybe i'll add a ban on them to the general prompt eventually, but for now i decided to leave it up to you.
 
 ### Emoji meanings
 
@@ -59,6 +59,7 @@ i won't bore you with the details of what regexes even are, instead i'll just te
 - Testing jailbreaks, obviously
 - Adding something like CYOA to make playing more fun
 - Adding a chatty mode for Iris so she can drop little comments with her reactions to what's happening in the rp
+- Adding prefill: since newer versions are disabling native assistant prefills (jerks), I need to figure out the right way to implement them now.
 - General ongoing work on the prompts so the preset turns out to be an absolute gem
 
 # Коротко о пресете (на русском)
@@ -78,7 +79,7 @@ i won't bore you with the details of what regexes even are, instead i'll just te
 
 ## Tired Iris preset
 
-у некоторых моих блоков стоит позиционирование на глубине в чате, а не относительное. я решила так сделать потому, что в отличие от некоторых "фундаментальных" инструкций, есть вещи, которые ИИ забывает на длинных дистанциях, но о которых крайне важно помнить, и такое позиционирование периодически "напоминает" сетке о правилах. я не уверена в том, насколько это хорошо работает с теми или иными промптами - вы можете вообще сделать всё позиционирование относительным, а можете увеличить глубину, я тоже буду тестировать.
+у некоторых моих блоков стоит позиционирование на глубине в чате, а не относительное. я решила так сделать потому, что в отличие от некоторых "фундаментальных" инструкций, есть вещи, которые ИИ забывает на длинных дистанциях, но о которых крайне важно помнить, и такое позиционирование периодически "напоминает" сетке о правилах. я не уверена в том, насколько это хорошо работает с теми или иными промптами - вы можете вообще сделать всё позиционирование относительным, а можете увеличить глубину, я тоже буду тестировать. у меня также нет и не планируется чётких, дотошных инструкций по типу "пиши так, а не вот так", "делай то, а не это", потому что я специально сделала под это промпты "what i love" и "what i hate". у пресета есть конкретное ядро, а вот предпочтения у всех разные. да, есть определённые, так скажем, "клодизмы" которые бесят большую часть людей, и, быть может, я и внесу запрет на них в общий промпт, но пока что решила оставить это на ваше усмотрение.
 
 ### Обозначение эмодзи
 
@@ -112,4 +113,5 @@ i won't bore you with the details of what regexes even are, instead i'll just te
 - Тест джейлбрейков, разумеется
 - Добавление чего-то вроде CYOA, чтоб играть было интереснее
 - Добавление болтливого режима для Айрис, чтоб она могла оставлять небольшие комментарии со своими эмоциями по поводу того, что происходит в ролке
+- Добавление префилла: так как с новыми версиями нативные ассистант-префилы отрубают (гады), мне нужно разобраться, как теперь их правильно делать
 - В целом регулярная работа над промптами, чтобы пресет был конфеткой
