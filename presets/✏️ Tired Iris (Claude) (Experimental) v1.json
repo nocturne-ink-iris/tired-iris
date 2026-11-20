@@ -487,6 +487,20 @@
             "injection_order": 100,
             "injection_trigger": [],
             "forbid_overrides": false
+        },
+        {
+            "identifier": "229feee3-f93c-4dbf-94d8-cfb7cb5a9f92",
+            "system_prompt": false,
+            "enabled": false,
+            "marker": false,
+            "name": "🔓 ⋯ language",
+            "role": "user",
+            "content": "{{// If you switch to russian, the tokenizer will become extremely resource-hungry. russian-speaking roleplayers who use Claude are likely already aware of this issue, but I thought I’d mention it just in case.}}\n\n<language>\n\nThis story is written in English.\n\n</language>",
+            "injection_position": 0,
+            "injection_depth": 4,
+            "injection_order": 100,
+            "injection_trigger": [],
+            "forbid_overrides": false
         }
     ],
     "prompt_order": [
@@ -648,6 +662,10 @@
                 },
                 {
                     "identifier": "1df959f1-cbe8-4fbd-a03b-ee19f4d3558d",
+                    "enabled": true
+                },
+                {
+                    "identifier": "229feee3-f93c-4dbf-94d8-cfb7cb5a9f92",
                     "enabled": true
                 },
                 {
