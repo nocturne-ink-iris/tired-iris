@@ -1,7 +1,7 @@
 {
     "id": "011f688f-4797-411d-93f8-8f8a6b92054b",
     "scriptName": "Iris OOC Strip Old (Context)",
-    "findRegex": "/\\s*<iris_ooc>[\\s\\S]*?<\\/iris_ooc>\\s*/gi",
+    "findRegex": "/\\s*(?:---\\s*)?<details(?:\\s+open)?><summary>✏️ \\(✧∀✧\\)\\/ Iris<\\/summary>[\\s\\S]*?<\\/details>\\s*/gi",
     "replaceString": "",
     "trimStrings": [],
     "placement": [
@@ -12,6 +12,6 @@
     "promptOnly": true,
     "runOnEdit": true,
     "substituteRegex": 0,
-    "minDepth": 10,
+    "minDepth": 20,
     "maxDepth": null
 }
