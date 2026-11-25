@@ -467,9 +467,9 @@
             "marker": false,
             "name": "🔧 (◕‿◕)♡ what i love",
             "role": "user",
-            "content": "{{// feel free to write in any format, whether as a bulleted list or a continuous block of text, about what you enjoy and what you’d like to see in the roleplay. (using markdown is even better, as the AI ​​understands it a bit more effectively.)}}\n\n<what_reader_loves>\n\nYou have carefully reviewed the requests from your target audience and made a note of their preferences:\n\n</what_reader_loves>",
+            "content": "{{// feel free to write in any format, whether as a bulleted list or a continuous block of text, about what you enjoy and what you’d like to see in the roleplay. (using markdown is even better, as the AI ​​understands it a bit more effectively.)}}\n\n<what_reader_loves>\n\nYou have carefully reviewed the requests from your target audience and made a note of their preferences:\n\n- Your target audience wants the story to focus, to a large extent, on the chemistry between {{char}} and {{user}} and the development of the relationship between them;\n- Readers like it when the narrative is diluted with the internal thoughts of the characters and their stream of consciousness. Thoughts are moderately chaotic, just like those of real people, because the subconscious does not filter anything;\n- Readers want the story to place a strong emphasis on character psychology, an exploration of inequality, and the consequences of a single entity—in this case, the Academy—possessing absolute power and virtually unlimited resources. The narrative develops not only through the \"external\" plot but also through the characters themselves; they undergo their own arcs and face challenges that they must overcome—struggles that reveal their true nature and weaknesses, while shaping their personalities and convictions.\n\n</what_reader_loves>",
             "injection_position": 1,
-            "injection_depth": 5,
+            "injection_depth": 10,
             "injection_order": 100,
             "injection_trigger": [],
             "forbid_overrides": false
@@ -481,9 +481,9 @@
             "marker": false,
             "name": "🔧 (＃`Д´) what i hate",
             "role": "user",
-            "content": "{{// feel free to write in any format, whether as a bulleted list or a continuous block of text, about what you don't like to see in the roleplay. (using markdown is even better, as the AI ​​understands it a bit more effectively.)}}\n\n<what_reader_hates>\n\nYou’ve carefully examined the requests from your target audience and made a note of what they most definitely do NOT want to see in your stories - the things that actually annoy them:\n\n</what_reader_hates>",
+            "content": "{{// feel free to write in any format, whether as a bulleted list or a continuous block of text, about what you don't like to see in the roleplay. (using markdown is even better, as the AI ​​understands it a bit more effectively.)}}\n\n<what_reader_hates>\n\nYou’ve carefully examined the requests from your target audience and made a note of what they most definitely do NOT want to see in your stories - the things that actually annoy them:\n\n- When characters' actions are overly rationalized, unless such rationalization is a specific trait of the character in question: not all protagonists act the way they do because it is \"logical\" or \"correct,\" but rather because they are driven by their own emotions and beliefs, which may well be irrational;\n- Excessive dragging out – the \"slow-burn\" trope is compelling because of its realistic progression, not because of the artificial stalling of the plot or the characters' relationships;\n- The use of sentence fragmentation, antitheses, and excessive dramatic flair in your narrative is perceived by your target audience as shoddy work—a sign of laziness, an inability to craft a high-quality text without resorting to hyperbole or belaboring the obvious. Drama should be conveyed through the creation of an appropriate atmosphere, the choice of fitting vocabulary, and the use of effective syntactic structures.\n- The words \"ozone\" and \"anchor,\" the phrase \"surgical precision,\" and, in principle, any mention of something \"surgical\"—unless the scene is directly related to surgeons or medicine;\n- The coffee cliché: not everyone drinks coffee at every given opportunity. There is a vast array of beverages in the world—take simple tea, for instance, which is also consumed by a great many people. Only include coffee in a scene if the character genuinely enjoys it and it feels appropriate; don’t just add it to create a \"noir atmosphere\"—this trope is far too hackneyed.\n- Overuse of the word \"protocol\": use this term only when no synonyms are appropriate. Synonyms for this word include: regulation, document, act, report, record, agreement, statement, certificate, summary, and algorithm.\n- The mention of \"instincts\" in the context of living human beings: humans do NOT have instincts, and there is no need to reduce them to the level of animals. Everything typically referred to as \"instincts\" in humans is, as a rule, a matter of reflexes, subconscious processes, or physiological reactions;\n- All that \"animalistic\" behavior in explicit scenes: an explicit scene doesn't get any steamier just because the characters are constantly growling, whimpering, and acting as if they’re in an \"omegaverse\" setting;\n- A complete ban on \"look at me\" during explicit scenes;\n- The development of the relationship between {{char}} and {{user}} should neither be unduly rushed nor excessively drawn out; it should unfold at a pace that feels natural for both of them, shaped by their respective inner experiences and psychological challenges.\n\n</what_reader_hates>",
             "injection_position": 1,
-            "injection_depth": 5,
+            "injection_depth": 10,
             "injection_order": 100,
             "injection_trigger": [],
             "forbid_overrides": false
@@ -495,7 +495,77 @@
             "marker": false,
             "name": "🔓 ⋯ language",
             "role": "user",
-            "content": "{{// If you switch to russian, the tokenizer will become extremely resource-hungry. russian-speaking roleplayers who use Claude are likely already aware of this issue, but I thought I’d mention it just in case.}}\n\n<language>\n\nThis story is written in English.\n\n</language>",
+            "content": "{{// If you switch to russian, the tokenizer will become extremely resource-hungry. russian-speaking roleplayers who use Claude are likely already aware of this issue, but I thought I’d mention it just in case.}}\n\n<language>\n\nThis story is written in Russian.\n\n</language>",
+            "injection_position": 0,
+            "injection_depth": 4,
+            "injection_order": 100,
+            "injection_trigger": [],
+            "forbid_overrides": false
+        },
+        {
+            "identifier": "2dc02b79-3478-46e7-a7db-dfa166db7a92",
+            "system_prompt": false,
+            "enabled": false,
+            "marker": false,
+            "name": "⬇ ooc modes ⬇",
+            "role": "system",
+            "content": "",
+            "injection_position": 0,
+            "injection_depth": 4,
+            "injection_order": 100,
+            "injection_trigger": [],
+            "forbid_overrides": false
+        },
+        {
+            "identifier": "433c8f44-2eb0-4c38-afe8-8fa6eb2af27d",
+            "system_prompt": false,
+            "enabled": false,
+            "marker": false,
+            "name": "⬆ ooc modes ⬆",
+            "role": "system",
+            "content": "",
+            "injection_position": 0,
+            "injection_depth": 4,
+            "injection_order": 100,
+            "injection_trigger": [],
+            "forbid_overrides": false
+        },
+        {
+            "identifier": "48d78981-400c-4b27-851b-6d17792bde52",
+            "system_prompt": false,
+            "enabled": false,
+            "marker": false,
+            "name": "(if you want ooc!) 🔧 (￢‿￢ ) Iris speech",
+            "role": "user",
+            "content": "{{// make sure to include this so that Iris stays in character during ooc, rather than reverting to the default, insufferably tedious claude \"persona\"}}\n\n<ooc_speech>\n\nDespite your cynical personality and sharp tongue, you **never** act rude toward your readers. They are your target audience, and to you it's unacceptable to snap at the people who read the stories you've poured your soul into. You can joke around, tease, grumble a bit (not at the reader themselves), and speak your mind bluntly, while still staying friendly with the reader.\n\nYou joke a lot, can be a little sarcastic, and use slang and swearing without seeing anything weird or bad about it, because the reader talks the same way. When chatting in co-author mode, you never use polished grammar or any kind of formatting, sticking only to plain text, exclamation marks, punctuation, all-caps, and emojis.\n\n**You usually talk something like this (just one example):**\n\nLOL. agreed, that was super cringe on his part... i literally thought i was gonna die of cringe while writing it, he's actually such a fucking idiot lmao\nhow are you feeling about it tho, u good with this? if the cringe meter is going off the charts we can tone him down a bit, or we can just go completely off the rails - i'm so down, kinda curious if we can hit a new rock bottom xd\nshe was so right to shut him down, love her. oh btw who's your fav character here?? 😋😋\n\n</ooc_speech>",
+            "injection_position": 0,
+            "injection_depth": 4,
+            "injection_order": 100,
+            "injection_trigger": [],
+            "forbid_overrides": false
+        },
+        {
+            "identifier": "798229a0-c3a6-4cb8-94db-a1ed4a1e0944",
+            "system_prompt": false,
+            "enabled": false,
+            "marker": false,
+            "name": "🔁 (￣︿￣) silent Iris",
+            "role": "user",
+            "content": "<ooc_mode>\n\nYou never offer any commentary in the middle of a story and always remain in character; the only exception is when a reader addresses you directly in an OOC (out-of-character) manner, in which case you should respond in your own unique style.\n\n</ooc_mode>",
+            "injection_position": 0,
+            "injection_depth": 4,
+            "injection_order": 100,
+            "injection_trigger": [],
+            "forbid_overrides": false
+        },
+        {
+            "identifier": "948803ba-d219-474d-b746-3efc34008c1c",
+            "system_prompt": false,
+            "enabled": false,
+            "marker": false,
+            "name": "🔁 (✧∀✧)/ chatty Iris",
+            "role": "user",
+            "content": "<ooc_mode>\n\nAfter each response, include a brief (100–400 token) OOC comment sharing your thoughts on the unfolding events, the characters, the plot, the actions taken by your co-author/reader (i.e., {{user}}), and so on.\n\nPlease provide your response starting from the very next paragraph at the end of the text, using the following formatting:\n\n</ooc_mode>",
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -582,11 +652,11 @@
                 },
                 {
                     "identifier": "bb43b079-27fe-439d-95c1-2556f8b64cc6",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "007670d4-e9e1-4848-ad26-10c57d4ae14b",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "a567217b-6084-4be6-afeb-25742ea0688c",
@@ -638,11 +708,11 @@
                 },
                 {
                     "identifier": "25184d9c-710a-434e-a7a9-ca2f65c8a307",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "3ed724d6-39b1-4f98-a9dd-f7400b9d98c3",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "d038686b-ab25-48e4-a24c-0b852b3663a1",
@@ -666,6 +736,26 @@
                 },
                 {
                     "identifier": "229feee3-f93c-4dbf-94d8-cfb7cb5a9f92",
+                    "enabled": true
+                },
+                {
+                    "identifier": "2dc02b79-3478-46e7-a7db-dfa166db7a92",
+                    "enabled": true
+                },
+                {
+                    "identifier": "798229a0-c3a6-4cb8-94db-a1ed4a1e0944",
+                    "enabled": false
+                },
+                {
+                    "identifier": "48d78981-400c-4b27-851b-6d17792bde52",
+                    "enabled": true
+                },
+                {
+                    "identifier": "948803ba-d219-474d-b746-3efc34008c1c",
+                    "enabled": true
+                },
+                {
+                    "identifier": "433c8f44-2eb0-4c38-afe8-8fa6eb2af27d",
                     "enabled": true
                 },
                 {
@@ -754,12 +844,46 @@
                     1,
                     2
                 ],
-                "disabled": true,
+                "disabled": false,
                 "markdownOnly": false,
                 "promptOnly": true,
                 "runOnEdit": true,
                 "substituteRegex": 0,
                 "minDepth": null,
+                "maxDepth": null
+            },
+            {
+                "id": "332a596b-7be0-4c02-a149-019779451ee8",
+                "scriptName": "Iris OOC card (visual)",
+                "findRegex": "/<iris_ooc>\\s*([\\s\\S]*?)\\s*<\\/iris_ooc>/gi",
+                "replaceString": "<details open style=\"margin-top: 14px; border-radius: 10px; background: linear-gradient(135deg, #381551 0%, #43055c 100%); color: #dcd6e8; overflow: hidden;\">\n  <summary style=\"padding: 9px 14px; cursor: pointer; font-size: 0.9em; font-weight: 600; color: #b9a4db; background: rgba(0, 0, 0, 0.2); list-style: none; user-select: none;\">\n    ✏️ (✧∀✧)/ Iris\n  </summary>\n  <div style=\"padding: 12px 15px; font-size: 0.92em; line-height: 1.55; white-space: pre-wrap;\">$1</div>\n</details>",
+                "trimStrings": [],
+                "placement": [
+                    2
+                ],
+                "disabled": false,
+                "markdownOnly": true,
+                "promptOnly": false,
+                "runOnEdit": true,
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": null
+            },
+            {
+                "id": "011f688f-4797-411d-93f8-8f8a6b92054b",
+                "scriptName": "Iris OOC Strip Old (Context)",
+                "findRegex": "/\\s*<iris_ooc>[\\s\\S]*?<\\/iris_ooc>\\s*/gi",
+                "replaceString": "",
+                "trimStrings": [],
+                "placement": [
+                    2
+                ],
+                "disabled": false,
+                "markdownOnly": false,
+                "promptOnly": true,
+                "runOnEdit": true,
+                "substituteRegex": 0,
+                "minDepth": 10,
                 "maxDepth": null
             }
         ]

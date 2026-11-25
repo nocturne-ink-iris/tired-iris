@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "../../llm frontends/roleplay/SillyTavern"
+		},
+		{
+			"path": "../../llm frontends/roleplay/SillyTavern/SillyTavern/public/scripts/extensions/third-party/my-theme-1"
+		}
+	],
+	"settings": {}
+}
