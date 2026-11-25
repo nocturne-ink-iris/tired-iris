@@ -1,5 +1,5 @@
 # V1.1
 
-- Убран единый старый блок output length из пресета: вместо него появились short, medium long, extra long и custom length для максимальной кастомизации;
-- Добавлен режим соавтора (находится в процессе доработки): написан no user control, with user control - заготовка с пустыми тегами;
-- Добавлены OOC режимы Айрис: chatty Iris и silent Iris с описанием её манеры речи для ИИ;
+- Removed the old single `output length` block from the preset: replaced it with `short`, `medium`, `long`, `extra long`, and `custom length` for maximum customization;
+- Added Co-author mode (work in progress): `no user control` is written, while `with user control` is a placeholder with empty tags;
+- Added Iris OOC modes: `chatty Iris` and `silent Iris` with a description of her speech style for the AI.
