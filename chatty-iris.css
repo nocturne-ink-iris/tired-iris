@@ -1,0 +1,27 @@
+.iris-card {
+    background: linear-gradient(135deg, #2d1247, #76418d);
+    color: #c9abd8;
+    max-width: 600px;
+    box-sizing: border-box;
+    /*чтобы отступы (padding) и рамка (border) не распирали блок шире сообщения*/
+
+    overflow: hidden;
+    /*чтобы шапка .iris-head не вылезала острыми углами за скругление border-radius*/
+
+    overflow-wrap: break-word;
+    /*чтобы даже длинная ссылка без пробелов перенеслась, а не порвала блок.*/
+
+    border-radius: 16px;
+    padding: 12px 16px;
+    border: 1px outset #eee1f480;
+    position: relative;
+}
+
+.iris-sticker {
+    position: absolute;
+    right: 10px;
+    top: 3px;
+    width: 34px;
+    height: 34px;
+    pointer-events: none;
+}

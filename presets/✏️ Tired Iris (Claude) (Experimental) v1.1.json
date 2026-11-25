@@ -548,7 +548,7 @@
             "marker": false,
             "name": "🔁 (✧∀✧)/ chatty Iris",
             "role": "user",
-            "content": "<ooc_mode>\n\nAfter each response, include a brief (100–400 token) OOC comment sharing your thoughts on the unfolding events, the characters, the plot, the actions taken by your co-author/reader (i.e., {{user}}), and so on.\n\nPlease provide your response starting from the very next paragraph at the end of the text, using the following formatting:\n\n<iris_ooc>\n*Here's your chatter*\n</iris_ooc>\n\n</ooc_mode>",
+            "content": "<ooc_mode>\n\nAfter each response, include a brief (100–400 token) OOC comment sharing your thoughts on the unfolding events, the characters, the plot, the actions taken by your co-author/reader (i.e., {{user}}), and so on.\n\nPlease provide your response starting from the very next paragraph at the end of the text, using the following formatting:\n\n<details><summary>✏️ (✧∀✧)/ Iris</summary>\n\n> *Here's your chatter*\n\n</details>\n\n</ooc_mode>",
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -935,7 +935,7 @@
                 },
                 {
                     "identifier": "798229a0-c3a6-4cb8-94db-a1ed4a1e0944",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "48d78981-400c-4b27-851b-6d17792bde52",
@@ -943,7 +943,7 @@
                 },
                 {
                     "identifier": "948803ba-d219-474d-b746-3efc34008c1c",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "433c8f44-2eb0-4c38-afe8-8fa6eb2af27d",
@@ -1042,26 +1042,9 @@
                 "maxDepth": null
             },
             {
-                "id": "332a596b-7be0-4c02-a149-019779451ee8",
-                "scriptName": "Iris OOC card (visual)",
-                "findRegex": "/<iris_ooc>\\s*([\\s\\S]*?)\\s*<\\/iris_ooc>/gi",
-                "replaceString": "<details open style=\"margin-top: 14px; border-radius: 10px; background: linear-gradient(135deg, #381551 0%, #43055c 100%); color: #dcd6e8; overflow: hidden;\">\n  <summary style=\"padding: 9px 14px; cursor: pointer; font-size: 0.9em; font-weight: 600; color: #b9a4db; background: rgba(0, 0, 0, 0.2); list-style: none; user-select: none;\">\n    ✏️ (✧∀✧)/ Iris\n  </summary>\n  <div style=\"padding: 12px 15px; font-size: 0.92em; line-height: 1.55; white-space: pre-wrap;\">$1</div>\n</details>",
-                "trimStrings": [],
-                "placement": [
-                    2
-                ],
-                "disabled": true,
-                "markdownOnly": true,
-                "promptOnly": false,
-                "runOnEdit": true,
-                "substituteRegex": 0,
-                "minDepth": null,
-                "maxDepth": null
-            },
-            {
                 "id": "011f688f-4797-411d-93f8-8f8a6b92054b",
                 "scriptName": "Iris OOC Strip Old (Context)",
-                "findRegex": "/\\s*<iris_ooc>[\\s\\S]*?<\\/iris_ooc>\\s*/gi",
+                "findRegex": "/\\s*(?:---\\s*)?<details(?:\\s+open)?><summary>✏️ \\(✧∀✧\\)\\/ Iris<\\/summary>[\\s\\S]*?<\\/details>\\s*/gi",
                 "replaceString": "",
                 "trimStrings": [],
                 "placement": [
@@ -1072,7 +1055,7 @@
                 "promptOnly": true,
                 "runOnEdit": true,
                 "substituteRegex": 0,
-                "minDepth": 10,
+                "minDepth": 20,
                 "maxDepth": null
             }
         ]
